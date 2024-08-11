@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int a =10;
+
+int main()
+{
+    //extern declared but no memory allocated
+    extern int a;
+    //auto declared and defined .memory allocated and Initialized to garbage value
+    auto int b;
+    
+    //static declared and initialised to zero.can't acccess outside scope
+    //we can only assign constant to static var and can't assign var to static var
+    //static int c = a; not allowed
+    
+    //register declared and memory allocated in registers
+    
+    register int r;
+
+    printf("%d",a);
+    printf("\n%d\n",b);
+    printf("%d\n",r);
+    return 0;
+}
