@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=5, b=7, c=6;
+    
+    
+    //if condition passes ,no need to check next condition,so increment not happens
+    int com = (a<b) || c++ ;
+    printf("com %d\n",com);// True 1
+    printf("c %d",c);// Not incremented 6
+
+    return 0;
+}
