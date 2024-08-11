@@ -1,0 +1,8 @@
+#include<stdio.h>
+#define A 10
+int main()
+{
+    const int a=A;
+    // a=5; error: assignment of read-only variable ‘a’
+    printf("%d",a);
+}
