@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+//global variable
+int v = 10;
+
+int fun()
+{
+  printf("Different block %d\n",v);  
+  return 0;
+}
+int main(){
+    
+    /* content of inner block is not visible to outer block.
+    But content of outer block is visible to inner block
+    */
+    //Local variable
+    int v = 3;
+    {
+        int v=4;
+        printf("inner block %d\n",v);
+    }
+    printf("outer block %d\n",v);
+    
+    fun();
+    
+    /* 
+    output:
+    inner block 4
+    outer block 3
+    Different block 10
+    */
+
+    return 0;
+}
