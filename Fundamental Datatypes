@@ -1,0 +1,92 @@
+#include<stdio.h>
+//limits header is used for symbolic constats such as INT_MAX,UINT_MAX...
+#include<limits.h>
+
+int main()
+{
+
+/*Data Types and Format specifier
+
+int  %d
+long %ld
+short %d
+char %s
+float %d
+unsigned int %u
+unsigned long %lu
+
+
+*/
+/*
+Decimal Number System(BASE10):range(0,9)
+568=>5*10^2
+    +5*10^1
+    +6*10^0 =568
+    
+Binary Number System(BASE2):range(0,1)
+1100=> 1*2^3=8
+      +1*2^2=4
+      +0*2^1=0
+      +0*2^0=0 ===>12
+      
+Formula for max Range of datatype ==> (2^n)-1 Where n is size of total bits
+Ex: Integer =2Bytes or (2*8bits)16bits
+    unsigned MaxRange or size =2^16-1=65535
+    signed MaxRange = -2^(n-1) to +2^(n-1)-1=-32768 to 32767
+    
+To calculate the size we can use sizeof operator
+*/
+
+
+int var1 = INT_MIN;
+int var2 = INT_MAX;
+
+unsigned int var3 = 0;
+unsigned int var4 = UINT_MAX;
+
+
+short int svar1 = SHRT_MIN;
+short int svar2 = SHRT_MAX;
+
+unsigned short int svar3 = 0;
+unsigned short int svar4 = USHRT_MAX;
+
+
+long int lvar1 = LONG_MIN;
+long int lvar2 = LONG_MAX;
+
+unsigned long int lvar3 = 0;
+unsigned long int lvar4 = ULONG_MAX;
+
+printf("signed integer range %d %d\n",var1,var2);
+printf("unsigned integer range %u %u\n",var3,var4);
+
+printf("signed short range %d %d\n",svar1,svar2);
+printf("unsigned short range %u %u\n",svar3,svar4);
+
+printf("signed long range %ld %ld\n",lvar1,lvar2);
+printf("unsigned long range %lu %lu\n",lvar3,lvar4);
+
+
+
+
+/*
+op:
+
+signed integer range -2147483648 2147483647
+unsigned integer range 0 4294967295
+signed short range -32768 32767
+unsigned short range 0 65535
+signed long range -9223372036854775808 9223372036854775807
+unsigned long range 0 18446744073709551615
+
+*/
+
+
+
+
+
+      
+      
+
+}
