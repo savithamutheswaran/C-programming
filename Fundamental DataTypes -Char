@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+
+/* size 1byte Range 0 to 255 (-127 to 128)
+   ASCII uses 3 bit and Extended ASCII uses 4 bit representation */
+
+    char a = 97;
+    char b = '9';
+    printf("%c",a);
+    printf("%c",b);
+    
+    // op: a9
+    
+    return 0;
+}
