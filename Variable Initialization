@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+    //declaration of variable
+    int a;
+    
+    //we can't redeclare a variable with samename [error: redeclaration of ‘a’ with no linkage]
+    //int a=10;
+    a=10;
+    
+    printf("value of a %d\n",a);
+    
+    //sizeof is an operator used to know the bytes allocated to the variable by the compiler
+    printf("size of a  %ld\n",sizeof(a));
+    
+    /*
+    Note:
+    variable name should not start with numbers, _ and white space is not allowed
+    variablename is case sensitive and it should not contain keywords and special chars
+    */
+    
+    return 0;
+}
