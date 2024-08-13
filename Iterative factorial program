@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+//less space than recursion
+int fact(int n){
+    int i =1;
+    while(n != 0){
+        i=i*n;
+        n--;
+    }
+    return i;
+}
+
+int main(){
+    printf("%d",fact(5));
+}
