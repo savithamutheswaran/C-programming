@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+/*
+
+Recursion-A function called by itself
+
+Direct Recursion      ==== f() => f()
+Indirect Recursion    ==== o()=>e()=>o()==>e()
+Tail Recursion        ==== recursive call is the last 
+Non Tail Recursion    ==== something left after recursive call
+
+*/
+
+int fact(int n){
+    
+    if(n==1){
+        
+        //base case
+        return 1;
+    }
+    else{
+        
+        //recursive procedure
+        return n*fact(n-1);
+        
+    }
+    
+}
+
+int main()
+{
+   printf("%d",fact(5));
+}
